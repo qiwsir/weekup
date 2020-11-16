@@ -12,7 +12,7 @@ from numpy.random import default_rng
 rng = default_rng()
 
 '''二项分布'''
-BNL = rng.binomial(10, 0.4, 100)
+BNL = rng.binomial(10, 0.4, 100)   # 变量不要用大写命名
 print(f'b(10, 0.4)分布的均值为：{stats.describe(BNL).mean}')
 print(f'b(10, 0.4)分布的方差为：{stats.describe(BNL).variance}')
 
